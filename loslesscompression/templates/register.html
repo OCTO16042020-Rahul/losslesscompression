@@ -1,0 +1,207 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Palette Multipurpose Flat Bootstrap Responsive website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Palette Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+
+    	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
+    	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- color switch -->
+    <link href="css/blast.min.css" rel="stylesheet" />
+        	<link rel="stylesheet" href="{{ url_for('static', filename='css/blast.min.css') }}">
+    <!-- lightbox -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.min.css') }}">
+    <!-- portfolio -->
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="blast-box">
+        <div class="blast-frame">
+            <p>color schemes</p>
+            <div class="blast-colors d-flex justify-content-center">
+                <div class="blast-color">#25e0ff</div>
+                <div class="blast-color">#feb800</div>
+                <div class="blast-color">#f25050</div>
+                <div class="blast-color">#18e7d3</div>
+                <!-- you can add more colors here -->
+            </div>
+            <p class="blast-custom-colors">Choose Custom color</p>
+            <input type="color" name="blastCustomColor" value="#cf2626">
+
+        </div>
+        <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+    </div>
+    <div id="home" class="banner" data-blast="bgColor">
+        <!-- header -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-fixed-top">
+            <div class="container">
+                <h1 class="wthree-logo">
+                         <a href="index.html" id="logoLink" data-blast="color">Lossless compression</a>
+                </h1>
+                <div class="nav-item  position-relative">
+                    <a href="#menu" id="toggle">
+                        <span></span>
+                    </a>
+                    <div id="menu">
+                        <ul>
+                                                 	<li class="menu__item"><a href="{{url_for('home')}}" class="menu__link">Login</a></li>
+							<li class="menu__item"><a href="{{url_for('register')}}" class="menu__link">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- //header -->
+        <!-- banner -->
+        <div class="container-fluid">
+            <div class="row banner-row">
+                <div class="col-lg-8 bg-img text-center">
+                    <h3 class="agile-title">Lossless compression.</h3>
+                    <div class="bnr-img">
+                        <img src="images/palette.png" alt="" class="img-fluid m-auto" />
+                    </div>
+
+                </div>
+                <div class="col-lg-4  my-auto p-0">
+
+                    <div id="login-row">
+                        <h4>Register now!</h4>
+                        <div id="login-column">
+                            <div class="box">
+                                <div class="shape1 shape-bg"></div>
+                                <div class="shape2 shape-bg"></div>
+                                <div class="shape3 shape-bg"></div>
+                                <div class="shape4 shape-bg"></div>
+                                <div class="shape5 shape-bg"></div>
+                                <div class="shape6 shape-bg"></div>
+                                <div class="shape7 shape-bg"></div>
+                                <div class="float">
+                                    <form class="form" action="/register1" method="post">
+                                                 <div class="form-group">
+
+                                            <input type="text" name="name"  class="form-control"
+                                                placeholder="your name" required>
+                                        </div>
+                                                 <div class="form-group">
+
+                                            <input type="phone" name="phone" class="form-control"
+                                                placeholder="your phone number" required>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <input type="text" name="username"  class="form-control"
+                                                placeholder="your usernmae" required>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <input type="password" name="password" id="password" class="form-control"
+                                                placeholder="*****" required>
+                                        </div>
+                                        <div class="form-group btn-agile">
+                                            <input type="submit" name="submit" class="btn btn-primary btn-md" value="Register">
+                                        </div>
+                                        <a href="/">Login</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //banner -->
+    </div>
+    <!-- about -->
+
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    	 <script src="{{ url_for('static', filename='js/jquery-2.2.3.min.js')}}"></script>
+    <!-- //js -->
+    <!--  menu toggle -->
+    <script src="js/menu.js"></script>
+    	 <script src="{{ url_for('static', filename='js/menu.js')}}"></script>
+    <!-- color switch -->
+    <script src="js/blast.min.js"></script>
+    	 <script src="{{ url_for('static', filename='js/blast.min.js')}}"></script>
+    <!-- light box -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    	 <script src="{{ url_for('static', filename='js/lightbox-plus-jquery.min.js')}}"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/scrolling-nav.js"></script>
+    	 <script src="{{ url_for('static', filename='js/scrolling-nav.js')}}"></script>
+    <!-- start-smooth-scrolling -->
+    <script src="js/move-top.js"></script>
+    	 <script src="{{ url_for('static', filename='js/move-top.js')}}"></script>
+    <script src="js/easing.js"></script>
+    	 <script src="{{ url_for('static', filename='js/easing.js')}}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

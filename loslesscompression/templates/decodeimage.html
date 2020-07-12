@@ -1,0 +1,41 @@
+{% include 'header.html' %}
+<br>
+<br>
+<br>
+<br>
+
+
+<table>
+    <thead>
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="css/style7.css">
+     	<link rel="stylesheet" href="{{ url_for('static', filename='css/style7.css') }}">
+<div id="tableWrap">
+<table class="responstable" >
+    <tr>
+        <th> Decode Image</th>
+        <th>Encrypted Data</th>
+
+    </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+            <tr>
+
+
+                <td>  <div class="card-img-top"
+                                 style="background: url('static/encodeimage/{{row[2]}}'); background-repeat:no-repeat; background-size: cover; height:600px;width:70% "></div></td>
+
+                <td>  <div class="card-img-top"
+                                 style="background: url('static/decodeimage/{{row[3]}}'); background-repeat:no-repeat; background-size: cover; height:300px;width:200% "></div></td>
+
+
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>

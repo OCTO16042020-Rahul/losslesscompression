@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/predict" method="post" class="f-color">
+                            <div class="form-group">
+                                <label for="contactusername">yours mail id </label>
+                                <input type="text" name="sendermail" class="form-control" id="contactusername" required placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactemail">reciever maiid </label>
+                                <input type="email" name="recievermail" class="form-control" id="contactemail" required placeholder="Enter your Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactcomment">Your Message</label>
+                                <textarea class="form-control"  name="message" rows="5" id="contactcomment" required placeholder="your message"></textarea>
+                            </div>
+                            <input type="submit" value="send">
+                        </form>
+
+</body>
+</html>
